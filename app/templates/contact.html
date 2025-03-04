@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="{{ translations.lang_code }}">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{{ translations.title }} </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}  ">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="static/jsscript.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-bootstrap.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_kontakt.css') }}">
+
+</head>
+
+<body>
+    <div class="background-container"
+        style="background-image:url({{ url_for('static', filename='images/handshake.jpg') }} );">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static', filename='images/aclogonb.png') }}" width="260" alt="logo logistica">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item" id="about"><a class="nav-link  " id="about-text" href="/">{{
+                                translations.nav.about }}</a></li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#serv " id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">{{
+                                translations.nav.services.servicestranslation }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="/services#agencjacelna">{{
+                                        translations.nav.services.customsagency }}</a></li>
+                                <li><a class="dropdown-item " href="/services#tlumaczenia">{{
+                                        translations.nav.services.sworntranslations }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link " href="/documents"> {{ translations.nav.documents }}
+                            </a></li>
+
+                        <li class="nav-item"><a class="nav-link " href="/contact">{{ translations.nav.contact }} </a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-services" href="#lang" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="bi bi-globe"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="?lang=pl">Polski</a></li>
+
+                                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+                                <li><a class="dropdown-item" href="?lang=ua">Ukraina</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Header-->
+        <header id="header" class="header py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5" id="opisnaglowka">
+                            <h3 class="display-5 fw-bolder text-white mb-2">{{ translations.aboutpage.header_title }}
+                            </h3>
+                            <p class="lead text-white mb-4">{{ translations.aboutpage.header }}</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a id="scroll-btn" href="#kontakt"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+
+    <section class="py-5 border-bottom" id="kontakt">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-10">
+                    <div class="ms-4 bg-white rounded p-4" style="background-color: rgba(255, 255, 255, 0.9);">
+                        <div class="row">
+                            <!-- I Oddział -->
+                            <div class="col-lg-6 mb-4">
+                                <div class="card h-100 border-0 shadow">
+                                    <img src="{{ url_for('static', filename='images/oddział1.jpg') }}"
+                                        class="card-img-top" alt="Zdjęcie I Oddziału">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-4 text-primary"> {{ translations.branch_I.title }}
+                                        </h5>
+
+                                        <p class="card-text">
+                                            <strong><i class="bi-geo-alt-fill
+                                                text-primary"></i> {{ translations.branch_I.address.address_header }}
+                                            </strong>
+                                            <a href="https://maps.google.com/?q=20-468 Lublin, ul. Energetyków 24"
+                                                target="_blank" class="text-dark"> {{
+                                                translations.branch_I.address.address_link }}</a></i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-clock-fill
+                                                text-primary"></i> {{ translations.branch_I.openinghours.title
+                                                }}</strong>
+                                            {{ translations.branch_I.openinghours.hours }}</i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-telephone-fill text-primary"></i> {{
+                                                translations.branch_I.tel }}</strong>
+
+                                            <a href="tel:817446545" class="text-dark"> 81 744 65 45</a><br>
+                                            <a href="tel:817490253" class="text-dark"> 81 749 02 53</a> (tel/fax)
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-envelope-fill text-primary"></i> {{
+                                                translations.branch_I.email }}</strong>
+
+                                            <a href="mailto:lublin@acekspert.eu" class="text-dark">
+                                                lublin@acekspert.eu</a>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+
+
+
+                                        <div class="map-container">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d79986.23583764676!2d22.467794152190024!3d51.208576966913455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x472257b8ac26694d%3A0x3a4e484b326d482f!2sEnergetyk%C3%B3w%2024%2C%2020-468%20Lublin!3m2!1d51.208605899999995!2d22.5501944!5e0!3m2!1spl!2spl!4v1722280002204!5m2!1spl!2spl"
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- II Oddział -->
+                            <div class="col-lg-6 mb-4">
+                                <div class="card h-100 border-0 shadow">
+                                    <img src="{{ url_for('static', filename='images/oddział2.jpg') }}"
+                                        class="card-img-top" alt="Zdjęcie II Oddziału">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-4 text-primary"> {{ translations.branch_II.title }}
+                                        </h5>
+
+                                        <p class="card-text">
+                                            <strong><i class="bi-geo-alt-fill
+                                                    text-primary"></i> {{ translations.branch_II.address.address_header
+                                                }} </strong>
+                                            <a href="https://maps.google.com/?q=20-027 Lublin, ul. Sądowa 10/2, parter"
+                                                target="_blank" class="text-dark"> {{
+                                                translations.branch_II.address.address_link }}</a></i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-clock-fill
+                                                    text-primary"></i> {{ translations.branch_II.openinghours.title
+                                                }}</strong>
+                                            {{ translations.branch_II.openinghours.hours }}</i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-telephone-fill text-primary"></i> {{
+                                                translations.branch_II.tel }}</strong>
+
+                                            <a href="tel:723555500" class="text-dark"> 723 55 55 00</a><br>
+                                            <a href="tel:815111677" class="text-dark"> 81 51 11 677</a> (tel/fax)
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-envelope-fill text-primary"></i> {{
+                                                translations.branch_II.email }}</strong>
+
+                                            <a href="mailto:biuro@acekspert.eu" class="text-dark">biuro@acekspert.eu</a>
+                                        </p>
+                                    </div>
+
+
+
+                                    <div class="card-footer">
+                                        <div class="map-container">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d79986.1855856393!2d22.4677969!3d51.2086059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472257b8ac26694d%3A0x3a4e484b326d482f!2sEkspert.%20Agencja%20celna!5e0!3m2!1spl!2spl!4v1722281618790!5m2!1spl!2spl"
+                                                width="600" height="450" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d79986.1855856393!2d22.4677969!3d51.2086059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225765df895155%3A0x549bf34e4ddaf88f!2sAgencja%20Celna%20EKSPERT!5e0!3m2!1spl!2spl!4v1722281580305!5m2!1spl!2spl"
+                                                width="600" height="450" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="py-5 bg-dark">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white"> &copy; 1998-<span id="currentYear"></span> Agencja Celna Ekspert </p>
+        </div>
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
+
+</html>

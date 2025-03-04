@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="{{ translations.lang_code }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{{ translations.title }}</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}  ">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+    <!-- <script src="/static/script.js" charset="utf-8"></script>  -->
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-bootstrap.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_index.css') }}">
+
+
+</head>
+
+<body>
+
+    <div class="background-container"
+        style="background-image:url({{ url_for('static', filename='images/kontenerowiec.webp') }} );">
+
+        <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static', filename='images/aclogonb.png') }}" width="260" alt="logo logistica">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item" id="about"><a class="nav-link  " id="about-text" href="/">{{
+                                translations.nav.about }}</a></li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#serv " id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">{{
+                                translations.nav.services.servicestranslation }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="/services#agencjacelna">{{
+                                        translations.nav.services.customsagency }}</a></li>
+                                <li><a class="dropdown-item " href="/services#tlumaczenia">{{
+                                        translations.nav.services.sworntranslations }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link " href="/documents"> {{ translations.nav.documents }}
+                            </a></li>
+
+                        <li class="nav-item"><a class="nav-link " href="/contact">{{ translations.nav.contact }} </a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-services" href="#lang" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="bi bi-globe"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="?lang=pl">Polski</a></li>
+
+                                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+                                <li><a class="dropdown-item" href="?lang=ua">Ukraina</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <header id="header" class="header py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5" id="opisnaglowka">
+                            <h3 id="header-text" class="display-5 fw-bolder text-white mb-2">
+                                {{ translations.aboutpage.header_title }}
+                            </h3>
+                            <p class="lead text-white mb-4" id="intro-text">{{ translations.aboutpage.header }}</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a id="scroll-btn" href="#onas">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+
+    <section class="py-5 border-bottom" id="onas">
+        <div class="container" id="gkontener">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="{{ url_for('static', filename='images/magazyn.jpg') }}"
+                        class="img-fluid rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="col-md-7 text-center text-md-start mt-4 mt-md-0">
+                    <h2 class="display-4">{{ translations.aboutpage.ourstory_title }}</h2>
+                    <p class="lead">{{ translations.aboutpage.ourstory }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="py-5 section-border-bottom">
+        <div class="container" id="gkontener">
+            <div class="col-md-12">
+                <div class="ms-4">
+                    <h2 class="display-4 text-center  animate-hidden"> {{
+                        translations.whatdowedo.whatdowedo_title }}</h2>
+                    <div class="row">
+                        <div class="col-md-6 animate-hidden">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item animate__animated animate__fadeInUp animate__delay-1s">
+                                    <span class="checked-icon"><i class="bi bi-dot text-primary"></i></span>
+                                    <span class="h4 fw-bolder">{{ translations.whatdowedo.tiles.tile_1.title }}
+                                        <br>
+                                        <span class="lead">{{ translations.whatdowedo.tiles.tile_1.description}}</span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item animate__animated animate__fadeInUp animate__delay-2s">
+                                    <span class="checked-icon"><i class="bi bi-dot text-primary"></i></span>
+                                    <span class="h4 fw-bolder">{{ translations.whatdowedo.tiles.tile_2.title }}
+                                        <br>
+                                        <span class="lead">{{ translations.whatdowedo.tiles.tile_2.description}}</span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item animate__animated animate__fadeInUp animate__delay-3s">
+                                    <span class="checked-icon"><i class="bi bi-dot text-primary"></i></span>
+                                    <span class="h4 fw-bolder">{{ translations.whatdowedo.tiles.tile_3.title }}
+                                        <br>
+                                        <span class="lead">{{ translations.whatdowedo.tiles.tile_3.description}}</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 animate-hidden">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item animate__animated animate__fadeInUp animate__delay-4s">
+                                    <span class="checked-icon"><i class="bi bi-dot text-primary"></i></span>
+                                    <span class="h4 fw-bolder">{{ translations.whatdowedo.tiles.tile_4.title }}
+                                        <br>
+                                        <span class="lead">{{ translations.whatdowedo.tiles.tile_4.description}}</span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item animate__animated animate__fadeInUp animate__delay-5s">
+                                    <span class="checked-icon"><i class="bi bi-dot text-primary"></i></span>
+                                    <span class="h4 fw-bolder">{{ translations.whatdowedo.tiles.tile_5.title }}
+                                        <br>
+                                        <span class="lead">{{ translations.whatdowedo.tiles.tile_5.description}}</span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item animate__animated animate__fadeInUp animate__delay-6s">
+                                    <span class="checked-icon"><i class="bi bi-dot text-primary"></i></span>
+                                    <span class="h4 fw-bolder">{{ translations.whatdowedo.tiles.tile_6.title }}
+                                        <br>
+                                        <span class="lead">{{ translations.whatdowedo.tiles.tile_6.description}}</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.animate-hidden');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        if (element.classList.contains('section-title')) {
+                            element.classList.add('animate__animated', 'animate__fadeIn');
+                        } else {
+                            element.classList.add('animate__animated', 'animate__fadeInUp');
+                        }
+                        element.classList.remove('animate-hidden');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+
+    <section class="py-5 border-bottom" id="features">
+        <div class="container px-5 my-5">
+            <div class="col-md-12 text-center mb-5 animate-hidden">
+                <h2 class="display-4">{{ translations.whyus.whyus_title}}</h2>
+                <p class="lead text-center">{{ translations.whyus.whyus_description}}</p>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-hidden">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-piggy-bank custom-ekspert-color"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">{{ translations.whyus.tiles.tile_1.title}}</h2>
+                    <p>{{ translations.whyus.tiles.tile_1.description}}</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-hidden">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-book"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">{{ translations.whyus.tiles.tile_2.title}}</h2>
+                    <p>{{ translations.whyus.tiles.tile_2.description}}</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-hidden">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">{{ translations.whyus.tiles.tile_3.title}}</h2>
+                    <p>{{ translations.whyus.tiles.tile_3.description}}</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-hidden">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-hand-thumbs-up"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">{{ translations.whyus.tiles.tile_4.title}}</h2>
+                    <p>{{ translations.whyus.tiles.tile_4.description}}</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-hidden">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">{{ translations.whyus.tiles.tile_5.title}}</h2>
+                    <p>{{ translations.whyus.tiles.tile_5.description}}</p>
+                </div>
+                <div class="col-lg-4 animate-hidden">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">{{ translations.whyus.tiles.tile_6.title}}</h2>
+                    <p>{{ translations.whyus.tiles.tile_6.description}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Intersection Observer -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.animate-hidden');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        if (element.classList.contains('col-md-12')) {
+                            element.classList.add('animate__animated', 'animate__fadeInDown');
+                        } else if (element.classList.contains('col-lg-4')) {
+                            element.classList.add('animate__animated', 'animate__zoomIn');
+                        }
+                        element.classList.remove('animate-hidden');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+
+
+    <!--  {# <section class="py-5 border-bottom" id="transport-cysternowy">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Wyróżnia nas
+                </h2>
+                <p class="lead mb-0">Jako jedyni na rynku ogólnoświatowym posiadamy opatentowane urządzenie do badania
+                    czystości cysterny w czasie rzeczywistym, które daje Nam blisko 100% pewności, że dany zbiornik jest
+                    odpowiednio czysty. Dysponujemy najwyższej klasy technologią do mycia wnętrz zbiorników, jak i
+                    bardzo skuteczną chemią dezynfekującą, co ma kluczowe znaczenie jeśli chodzi o bezpieczny transport
+                    cysternami chemicznymi czy spożywczymi.
+
+                </p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="{{ url_for('static', filename='images/wyroznia_nas1.jpg') }}" class="card-img-top" alt="Client 1">
+
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <span class="checked-icon"><i class="bi bi-check"></i></span>
+
+                                <div class="ms-4">
+                                    <p class="mb-1">Certyfikat SQAS – świadczący o gwarancji i jakości mycia, którą
+                                        jesteśmy w stanie zaoferować</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="{{ url_for('static', filename='images/wyroznia_nas2.jpg') }}" class="card-img-top" alt="Client 2">
+
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <span class="checked-icon"><i class="bi bi-check"></i></span>
+
+                                <div class="ms-4">
+                                    <p class="mb-1">Innowacyjna opatentowana technologia – 100% Gwarancja czystości
+                                        cystern</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                   
+                        <img src="{{ url_for('static', filename='images/wyroznia_nas3.jpg') }}" class="card-img-top" alt="Client 3">
+
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <span class="checked-icon"><i class="bi bi-check"></i></span>
+
+                                <div class="ms-4">
+                                    <p class="mb-1">HACCP – bezpieczeństwo, czystość i jakość stawiane są na pierwszym
+                                        miejscu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  #}-->
+
+
+
+    <section class="py-5">
+        <div class="container px-5 my-5">
+            <h2 class="section-title">Czy wiesz, że...?</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">Braliśmy udział w sprowadzeniu z Meksyku obrazów wybitnej polskiej
+                                malarki Tamary Łempickiej</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">"Sed ut tem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">uas molestie sunt in culpa qui officia deserunt. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveni </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">olestiasceat faarum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section  class="bg-dark  py-4 mt-4   border-bottom" id="kontakt">
+        <div class="container" style="margin-top: 20px;">
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 text-center mb-4">
+                    <a href="/">
+                        <img src="{{ url_for('static', filename='images/aclogonb.png') }}" width="260" alt="logo logistica">
+                    </a>
+                </div>
+                <div class="col-md-10">
+
+                    <div class="ms-4  rounded p-4">
+                        <div class="row">
+                          
+
+                            <!-- I Oddział -->
+                            <div class="col-lg-6 mb-4  ">
+                                <div class="card h-100 border-0 shadow bg-dark text-light ">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-4 text-primary"> {{ translations.branch_I.title }}
+                                        </h5>
+
+                                        <p class="card-text">
+                                            <strong><i class="bi-geo-alt-fill
+                                                text-primary"></i> {{ translations.branch_I.address.address_header }}
+                                            </strong>
+                                            <a href="https://maps.google.com/?q=20-468 Lublin, ul. Energetyków 24"
+                                                target="_blank" class="link-light"> {{
+                                                translations.branch_I.address.address_link }}</a></i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-clock-fill
+                                                text-primary"></i> {{ translations.branch_I.openinghours.title
+                                                }}</strong>
+                                            {{ translations.branch_I.openinghours.hours }}</i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-telephone-fill text-primary"></i> {{
+                                                translations.branch_I.tel }}</strong>
+
+                                            <a href="tel:817446545" class="link-light"> 81 744 65 45</a><br>
+                                            <a href="tel:817490253" class="link-light"> 81 749 02 53</a> (tel/fax)
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-envelope-fill text-primary"></i> {{
+                                                translations.branch_I.email }}</strong>
+
+                                            <a href="mailto:lublin@acekspert.eu" class="link-light">
+                                                lublin@acekspert.eu</a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- II Oddział -->
+                            <div class="col-lg-6 mb-4">
+                                <div class="card h-100 border-0 shadow bg-dark text-light ">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-4 text-primary"> {{ translations.branch_II.title }}
+                                        </h5>
+
+                                        <p class="card-text">
+                                            <strong><i class="bi-geo-alt-fill
+                                                    text-primary"></i> {{ translations.branch_II.address.address_header
+                                                }} </strong>
+                                            <a href="https://maps.google.com/?q=20-027 Lublin, ul. Sądowa 10/2, parter"
+                                                target="_blank" class="link-light"> {{
+                                                translations.branch_II.address.address_link }}</a></i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-clock-fill
+                                                    text-primary"></i> {{ translations.branch_II.openinghours.title
+                                                }}</strong>
+                                            {{ translations.branch_II.openinghours.hours }}</i>
+                                            <br>
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-telephone-fill text-primary"></i> {{
+                                                translations.branch_II.tel }}</strong>
+
+                                            <a href="tel:723555500" class="link-light"> 723 55 55 00</a><br>
+                                            <a href="tel:815111677" class="link-light"> 81 51 11 677</a> (tel/fax)
+                                        </p>
+                                        <p class="card-text">
+                                            <strong><i class="bi bi-envelope-fill text-primary"></i> {{
+                                                translations.branch_II.email }}</strong>
+
+                                            <a href="mailto:biuro@acekspert.eu"
+                                                class="link-light">biuro@acekspert.eu</a>
+                                        </p>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="cookieconsent2" tabindex="-1" aria-labelledby="cookieconsentLabel2" aria-hidden="true"
+        data-mdb-backdrop="static" data-mdb-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="cookieconsentLabel2">Cookies & Privacy</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-3 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-cookie-bite fa-4x text-primary bg-primary"></i>
+                        </div>
+
+                        <div class="col-9">
+                            <p>This website uses cookies to ensure you get the best experience on our website.<a
+                                    class="d-block" href="#">Read more about cookies</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="declineCookies()" data-mdb-button-init data-mdb-ripple-init
+                        class="btn btn-outline-primary" data-mdb-dismiss="modal">Reject</button>
+                    <button type="button" onclick=" acceptCookies()" data-mdb-button-init data-mdb-ripple-init
+                        class="btn btn-primary" data-mdb-dismiss="modal">
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5 bg-dark">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white"> &copy; 1998-<span id="currentYear"></span> Agencja Celna Ekspert </p>
+        </div>
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    
+   
+
+</body>
+
+</html>

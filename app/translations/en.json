@@ -1,0 +1,273 @@
+{
+    "index": {
+        "nav": {
+            "about": "About Us",
+            "services": {
+                "servicestranslation": "Services",
+                "customsagency": "Customs Agency",
+                "sworntranslations": "Translations"
+            },
+            "documents": "Documents",
+            "careers": "Careers",
+            "contact": "Contact"
+        },
+        "aboutpage": {
+            "header_title": "CUSTOMS MATTERS ARE OUR ENTIRE WORLD",
+            "header": "You’ve probably heard of many dynamically growing customs service companies. It’s tough :-). We started in 1998 as a small company in Lublin offering typical customs services. Now our services cover a broad range, and satisfied clients have been coming back to us for years.",
+            "ourstory_title": "Our Story",
+            "ourstory": "We have been operating in the customs services market since 1998. Over this time, through hard and honest work, we have achieved a high position in the industry, earning the trust of both companies and individuals. We may not be a large company, but we always prioritize professionalism and competence."
+        },
+        "whatdowedo": {
+            "whatdowedo_title": "What Do We Do?",
+            "tiles": {
+                "tile_1": {
+                    "title": "Foreign Trade:",
+                    "description": "Export, admission to free circulation including personal effects. We also specialize in economic procedures."
+                },
+                "tile_2": {
+                    "title": "Intrastat Statistics:",
+                    "description": "Professional management."
+                },
+                "tile_3": {
+                    "title": "Customs Consulting:",
+                    "description": "Representation before customs and tax authorities."
+                },
+                "tile_4": {
+                    "title": "Written Translations:",
+                    "description": "Standard and sworn translations in all languages of the world."
+                },
+                "tile_5": {
+                    "title": "Customs and Tax Documents:",
+                    "description": "Preparation of documentation for importing vehicles from the European Union, Switzerland, Norway, USA, Canada, and others."
+                },
+                "tile_6": {
+                    "title": "Excise and Tax Declarations:",
+                    "description": "Filling out AKC-US declarations, applications for excise tax exemption on vehicles for individuals and businesses."
+                }
+            }
+        },
+        "whyus": {
+            "whyus_title": "Why Us?",
+            "whyus_description": "Our clients include both large companies with whom we maintain long-term cooperation and individuals needing one-time advice. Our offer is aimed at everyone who needs reliable and competent customs service.",
+            "tiles": {
+                "tile_1": {
+                    "title": "We Know How to Minimize Costs",
+                    "description": "We focus on optimizing taxation."
+                },
+                "tile_2": {
+                    "title": "Experience and Tailor-Made Solutions",
+                    "description": "We have seen a lot and are rarely surprised. We solve problems that have no answers online."
+                },
+                "tile_3": {
+                    "title": "Forwarder Support",
+                    "description": "Individual care from the forwarder and fleet department."
+                },
+                "tile_4": {
+                    "title": "Year-Round Cooperation",
+                    "description": "Continuous year-round cooperation."
+                },
+                "tile_5": {
+                    "title": "High Mileage",
+                    "description": "Favorable transport orders."
+                },
+                "tile_6": {
+                    "title": "We Treat Each Client Differently",
+                    "description": "We know that the average user does not exist. Our staff helps clients without categorizing and using templates."
+                }
+            }
+        },
+        "branch_I": {
+            "title": "Branch I",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-468 Lublin, Energetyków Street 24"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 8:00 AM - 3:30 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "Branch II",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-027 Lublin, Sądowa Street 10/2, Ground Floor"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 7:15 AM - 3:15 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        }
+    },
+    "services": {
+        "nav": {
+            "about": "About Us",
+            "services": {
+                "servicestranslation": "Services",
+                "customsagency": "Customs Agency",
+                "sworntranslations": "Translations"
+            },
+            "documents": "Documents",
+            "careers": "Careers",
+            "contact": "Contact"
+        },
+        "aboutpage": {
+            "header_title": "HERE ARE OUR SERVICES",
+            "header": "For many years, we have been expanding the range of our services. Below you will find what we do on a daily basis..."
+        },
+        "customsagency": {
+            "customsagency_title": "Customs Agency",
+            "customsagency_paragraph_1": "We carry out customs clearances at the Customs Office in Lublin.",
+            "customsagency_paragraph_2": "We handle customs clearances on behalf of our clients in the procedure for admission to free circulation and export.",
+            "customsagency_paragraph_3": "We specialize particularly in clearing:",
+            "subsections": {
+                "subsection_1": "motor vehicles, collector’s items brought from so-called third countries (USA, Canada, Switzerland, Norway) as well as from European Community countries",
+                "subsection_2": "postal shipments - at any Customs Office in Poland.",
+                "subsection_3": "live animals: dogs, cats, horses, and other animals.",
+                "subsection_4": "clearances with exemption from customs duties, so-called RELOCATION PROPERTY, and others.",
+                "subsection_5": "motor vehicles, collector’s items brought from so-called third countries (USA, Canada, Switzerland, Norway) as well as from European Community countries"
+            },
+            "customsagency_paragraph_4": "We also welcome clients clearing goods from and to the United Kingdom, Scotland, Ireland from 01.01.2021.",
+            "customsagency_paragraph_5": "We provide interested companies with expedited EORI numbers."
+        },
+        "sworntranslations": {
+            "sworntranslations_title": "Translations",
+            "sworntranslations_paragraph_1": "In our business, we also arrange for sworn and standard written translations upon client request.",
+            "sworntranslations_paragraph_2": "These can be any documents such as diplomas, certificates, vehicle documents, and others.",
+            "sworntranslations_paragraph_3": "We fulfill translation orders from any foreign language to Polish, from Polish to any foreign language, and from any foreign language to any other foreign language.",
+            "subsections_1": {
+                "subtitle": "Completion Times",
+                "subsection_1": "vehicle documents – instantly to a few business days – depending on the translated language.",
+                "subsection_2": "other documents – completion time arranged individually with the client."
+            },
+            "subsections_2": {
+                "subtitle": "Sample Price List for Vehicle Documents:",
+                "subsection_1": "German – Germany, Austria, Switzerland - from 40.00 to 120.00 PLN (complete) depending on the vehicle's country of origin.",
+                "subsection_2": "French – Belgium, France, Switzerland, Luxembourg – 70.00 PLN per document.",
+                "subsection_3": "Dutch – Netherlands, Belgium – 60.00 PLN per document.",
+                "subsection_4": "English – (UK, USA, Canada) agreement/invoice – 60.00 PLN per translation page*, CERTIFICATE OF OWNERSHIP/REGISTRATION DOCUMENT – 100.00 PLN per document.",
+                "subsection_5": "Italian – Italy – 90.00 PLN per translation page*.",
+                "subsection_6": "Norwegian – Norway – agreement – 120 PLN per translation page*."
+            },
+            "customsagency_annotation": "* (a translation page is 1125 characters per page).",
+            "customsagency_paragraph_4": "We also welcome clients clearing goods from and to the United Kingdom, Scotland, Ireland from 01.01.2021.",
+            "customsagency_paragraph_5": "We provide interested companies with expedited EORI numbers."
+        },
+        "branch_I": {
+            "title": "Branch I",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-468 Lublin, Energetyków Street 24"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 8:00 AM - 3:30 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "Branch II",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-027 Lublin, Sądowa Street 10/2, Ground Floor"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 7:15 AM - 3:15 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        }
+    },
+    "documents": {
+        "nav": {
+            "about": "About Us",
+            "services": {
+                "servicestranslation": "Services",
+                "customsagency": "Customs Agency",
+                "sworntranslations": "Translations"
+            },
+            "documents": "Documents",
+            "careers": "Careers",
+            "contact": "Contact"
+        },
+        "aboutpage": {
+            "header_title": "Documents",
+            "header": "Below you will find a list of documents available for download."
+        },
+        "branch_I": {
+            "title": "Branch I",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-468 Lublin, Energetyków Street 24"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 8:00 AM - 3:30 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "Branch II",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-027 Lublin, Sądowa Street 10/2, Ground Floor"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 7:15 AM - 3:15 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        }
+    },
+    "contact": {
+        "nav": {
+            "about": "About Us",
+            "services": {
+                "servicestranslation": "Services",
+                "customsagency": "Customs Agency",
+                "sworntranslations": "Translations"
+            },
+            "documents": "Documents",
+            "careers": "Careers",
+            "contact": "Contact"
+        },
+        "aboutpage": {
+            "header_title": "CONTACT",
+            "header": "Your inquiry, our service."
+        },
+        "branch_I": {
+            "title": "Branch I",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-468 Lublin, Energetyków Street 24"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 8:00 AM - 3:30 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "Branch II",
+            "address": {
+                "address_header": "Address",
+                "address_link": "20-027 Lublin, Sądowa Street 10/2, Ground Floor"
+            },
+            "openinghours": {
+                "title": "Opening Hours:",
+                "hours": "Mon-Fri 7:15 AM - 3:15 PM"
+            },
+            "tel": "Phone",
+            "email": "Email"
+        }
+    }
+}

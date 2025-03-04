@@ -1,0 +1,276 @@
+{
+    "index": {
+        "nav": {
+            "about": "O nas",
+            "services": {
+                "servicestranslation": "Usługi",
+                "customsagency": "Agencja Celna",
+                "sworntranslations": "Tłumaczenia"
+            },
+            "documents": "Dokumenty",
+            "careers": "Careers",
+            "contact": "Kontakt"
+        },
+        "aboutpage": {
+            "header_title": "SPRAWY CELNE TO CAŁY NASZ ŚWIAT",
+            "header": "Na pewno słyszałeś już o wielu dynamicznie rozwijających się firmach z branży usług celnych. Trudno :-). My zaczynaliśmy w 1998 roku mała lubelska firma, oferująca typowe usługi celne. Teraz nasze usługi obejmują szeroki zakres, a zadowoleni klienci wracają do nas od lat.",
+            "ourstory_title": "Nasza Historia",
+            "ourstory": "Działamy na rynku usług celnych od 1998 roku. Przez ten czas ciężką i uczciwą pracą wypracowaliśmy sobie wysoką pozycję w branży, zdobywając zaufanie zarówno firm, jak i osób fizycznych. Nie jesteśmy wielką firmą, ale zawsze stawiamy na profesjonalizm i kompetencje."
+        },
+        "whatdowedo": {
+            "whatdowedo_title": "Co Robimy?",
+            "tiles": {
+                "tile_1": {
+                    "title": "Obrót towarowy z zagranicą:",
+                    "description": "Wywóz, dopuszczenie do wolnego obrotu w tym mienie przesiedleńcze. Naszą specjalnoscią są również procedury gospodarcze."
+                },
+                "tile_2": {
+                    "title": "Statystyka Intrastat:",
+                    "description": "Profesjonalne prowadzenie."
+                },
+                "tile_3": {
+                    "title": "Doradztwo celne:",
+                    "description": "Reprezentacja przed organami celnymi oraz skarbowymi."
+                },
+                "tile_4": {
+                    "title": "Tłumaczenia pisemne:",
+                    "description": "Zwykłe i przysięgłe we wszystkich językach świata."
+                },
+                "tile_5": {
+                    "title": "Dokumenty celne i skarbowe:",
+                    "description": "Przygotowywanie dokumentacji przy sprowadzaniu samochodów z Unii Europejskiej, Szwajcarii, Norwegii, USA, Kanady oraz innych."
+                },
+                "tile_6": {
+                    "title": "Deklaracje akcyzowe i skarbowe:",
+                    "description": "Wypełnianie deklaracji AKC-US, wnioski o zwolnienie z akcyzy na samochody dla osób fizycznych i podmiotów gospodarczych."
+                }
+            }
+        },
+        "whyus": {
+            "whyus_title": "Dlaczego My?",
+            "whyus_description": "Naszymi klientami są zarówno duże spółki, z którymi prowadzimy długotrwałą współpracę, jak i osoby fizyczne potrzebujące jednorazowej porady. Nasza oferta jest skierowana do wszystkich, którzy potrzebują rzetelnej i kompetentnej obsługi celnej.",
+            "tiles": {
+                "tile_1": {
+                    "title": "Umiemy minimalizować koszty",
+                    "description": "Skupiamy się na optymalizacji opodatkowania. "
+                },
+                "tile_2": {
+                    "title": "Doświadczenie i autorskie rozwiązania",
+                    "description": "Wiele już widzieliśmy i mało co nas zaskakuje. Rozwiązujemy problemy, na które nie ma odpowiedzi w Internecie."
+                },
+                "tile_3": {
+                    "title": "Wsparcie spedytora",
+                    "description": "Indywidualna opieka spedytora i działu floty"
+                },
+                "tile_4": {
+                    "title": "Całoroczna współpraca",
+                    "description": "Stała całoroczna współpraca w kółkach"
+                },
+                "tile_5": {
+                    "title": "Duże kilometrowe przebiegi",
+                    "description": "Korzystne zlecenia transportowe"
+                },
+                "tile_6": {
+                    "title": "Z każdym porozmawiamy inaczej",
+                    "description": "Wiemy, że przeciętny użytkownik nie istnieje. Nasi pracownicy pomagają Klientom bez szufladkowania i ściągawek."
+                }
+            }
+        },
+        "branch_I": {
+            "title": "I Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-468 Lublin, ul. Energetyków 24"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": " pon.-pt.8:00 - 15:30"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "II Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-027 Lublin, ul. Sądowa 10/2, parter"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": "pon.-pt. 7:15 - 15:15"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        }
+    },
+    "services": {
+        "nav": {
+            "about": "O nas",
+            "services": {
+                "servicestranslation": "Usługi",
+                "customsagency": "Agencja Celna",
+                "sworntranslations": "Tłumaczenia"
+            },
+            "documents": "Dokumenty",
+            "careers": "Careers",
+            "contact": "Kontakt"
+        },
+        "aboutpage": {
+            "header_title": "OTO NASZE USŁUGI",
+            "header": "Od wielu lat dosnonalimy zakres naszych usług, ponizej znajdziesz czy na codzień się zajmujemy..."
+        },
+        "customsagency": {
+            "customsagency_title": "Agencja Celna",
+            "customsagency_paragraph_1": "Dokonujemy odpraw celnych przy Oddziale Celnym w Lublinie.",
+            "customsagency_paragraph_2": "Realizujemy odprawy celne na zlecenie naszych Klientów w procedurze dopuszczenia do wolnego obrotu oraz wywozu.",
+            "customsagency_paragraph_3": "Specjalizujemy się w szczególności w dokonywaniu odpraw:",
+            "subsections": {
+                "subsection_1": " pojazdów samochodowych, kolekcjonerskich przywożonych zarówno z tzw. krajów trzecich (USA, Kanada, Szwajcaria, Norwegia), jak i krajów Wspólnoty Europejskiej",
+                "subsection_2": " odprawy przesyłek pocztowych - w każdym Urzędzie Celnym Pocztowym w Polsce.",
+                "subsection_3": " odpraw żywych zwierząt : psów, kotów, koni i innych zwierząt.",
+                "subsection_4": " odpraw ze zwolnieniem z nalezności celnych tzw. MIENIE PRZESIEDLENIA i innych.",
+                "subsection_5": " pojazdów samochodowych, kolekcjonerskich przywożonych zarówno z tzw. krajów trzecich (USA, Kanada, Szwajcaria, Norwegia), jak i krajów Wspólnoty Europejskiej"
+            },
+            "customsagency_paragraph_4": "Zapraszamy także klientów odprawiających towary od 1.01.2021r z i do Wielkiej Brytanii, Szkocji,Irlandii.",
+            "customsagency_paragraph_5": "Uzyskujemy dla zainteresowanych firm w trybie exspresowym nr EORI."
+        },
+        "sworntranslations": {
+            "sworntranslations_title": "Tłumaczenia",
+            "sworntranslations_paragraph_1": "W naszej działalności zajmujemy się również organizowaniem na zlecenia klienta tłumaczeń pisemnych przysięgłych i zwykłych.",
+            "sworntranslations_paragraph_2": "Mogą być to dowolne dokumenty takie jak: dyplomy, zaświadczenia, dokumenty samochodowe oraz każde inne.",
+            "sworntranslations_paragraph_3": "Realizujemy zlecenia tłumaczeń z dowolnego języka obcego na język polski, z języka polskiego na dowolny język obcy oraz z dowolnego języka obcego na dowolny język obcy.",
+            "subsections_1": {
+                "subtitle": "Terminy realizacji",
+                "subsection_1": "dokumenty samochodowe – od ręki do kilku dni roboczych – w zależności od tłumaczonego języka,",
+                "subsection_2": "inne dokumenty – termin realizacji zlecenia ustalany z klientem indywidualnie."
+            },
+            "subsections_2": {
+                "subtitle": "Przykładowy cennik dla dokumentów samochodowych:",
+                "subsection_1": "  Język niemiecki – Niemcy, Austria, Szwajcaria - od 40,00 do 120,00 zł (komplet) w zależności od kraju przywozu samochodu,",
+                "subsection_2": " Język francuski – Belgia, Francja, Szwajcaria, Luksemburg – 70,00 zł za każdy dokument,",
+                "subsection_3": "  Język niderlandzki – Holandia, Belgia – 60,00 zł za każdy dokument,",
+                "subsection_4": "  Język angielski – (Wielka Brytania, USA, Kanada) umowa/faktura - 60,00 zł za każdą stronę tłumaczeniową*,CERTYFIKAT WŁASNOŚCI/DOWÓD REJESTRACYJNY-100,00 ZŁ za dokument",
+                "subsection_5": " Język włoski – Włochy – 90,00 zł za każdą stronę tłumaczeniową.*",
+                "subsection_6": " Język norweski – Norwegia - umowa - 120 zł za stronę tłumaczeniową.*"
+            },
+            "customsagency_annotation": "* (strona tłumaczeniowa to 1125 znaków na stronie).",
+            "customsagency_paragraph_4": "Zapraszamy także klientów odprawiających towary od 1.01.2021r z i do Wielkiej Brytanii, Szkocji,Irlandii.",
+            "customsagency_paragraph_5": "Uzyskujemy dla zainteresowanych firm w trybie exspresowym nr EORI."
+        },
+        "branch_I": {
+            "title": "I Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-468 Lublin, ul. Energetyków 24"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": " pon.-pt.8:00 - 15:30"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "II Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-027 Lublin, ul. Sądowa 10/2, parter"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": "pon.-pt. 7:15 - 15:15"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        }
+    },
+    "documents": {
+        "nav": {
+            "about": "O nas",
+            "services": {
+                "servicestranslation": "Usługi",
+                "customsagency": "Agencja Celna",
+                "sworntranslations": "Tłumaczenia"
+            },
+            "documents": "Dokumenty",
+            "careers": "Careers",
+            "contact": "Kontakt"
+        },
+        "aboutpage": {
+            "header_title": "Dokumenty",
+            "header": "Ponizej znajdziesz wykaz dokumentow do pobrania"
+        },
+        "branch_I": {
+            "title": "I Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-468 Lublin, ul. Energetyków 24"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": " pon.-pt.8:00 - 15:30"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "II Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-027 Lublin, ul. Sądowa 10/2, parter"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": "pon.-pt. 7:15 - 15:15"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        }
+    },
+    "contact": {
+       
+        "nav": {
+
+            "about": "O nas",
+            "services": {
+                "servicestranslation": "Usługi",
+                "customsagency": "Agencja Celna",
+                "sworntranslations": "Tłumaczenia"
+            },
+            "documents": "Dokumenty",
+            "careers": "Careers",
+            "contact": "Kontakt"
+        },
+        "aboutpage": {
+            "header_title": "KONTAKT",
+            "header": "Twoje zapytanie, nasz serwis"
+        },
+        "branch_I": {
+            "title": "I Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-468 Lublin, ul. Energetyków 24"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": " pon.-pt.8:00 - 15:30"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        },
+        "branch_II": {
+            "title": "II Oddział",
+            "address": {
+                "address_header": "Adres",
+                "address_link": "20-027 Lublin, ul. Sądowa 10/2, parter"
+            },
+            "openinghours": {
+                "title": "Godziny otwarcia:",
+                "hours": "pon.-pt. 7:15 - 15:15"
+            },
+            "tel": "Telefon",
+            "email": "Email"
+        }
+       
+    }
+}

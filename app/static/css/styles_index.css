@@ -1,0 +1,70 @@
+/* Styl dla zdjecia jako tło */
+.background-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Ustawia wysokość kontenera na całą wysokość ekranu */
+}
+
+.checked-icon i {
+    font-size: 1.5em;
+    margin-right: 0.5rem; /* Odstęp między ikoną a tekstem */
+}
+
+.list-group-item {
+    display: flex;
+    align-items: flex-start; /* Wyrównanie do góry */
+}
+
+/* .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 2rem;
+} */
+
+.section-border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.animate-hidden {
+    opacity: 0;
+}
+
+
+
+
+
+#kontakt .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+#kontakt .card:hover {
+    transform: scale(1.05);
+}
+
+#kontakt .card-title {
+    font-weight: bold;
+    color: #1170fd;
+}
+
+#kontakt .card-body {
+    padding: 20px;
+}
+
+
+
+#kontakt .link-light {
+    text-decoration: none;
+}
+
+#kontakt .link-light:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+

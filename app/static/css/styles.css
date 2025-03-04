@@ -1,0 +1,268 @@
+.header{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Dodanie cienia po najechaniu myszką */
+}
+
+
+
+.navbar,
+.header {
+    background-color: transparent !important;
+    /* Usuwa domyślne tło */
+}
+
+.nav-link{
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75); /* Dodanie cienia po najechaniu myszką */
+    transition: transform 0.3s ease; /* Dodaje płynne przejście */
+
+}
+
+.nav-link[aria-current="page"]
+{
+    /* text-decoration: underline rgb(41, 107, 250) wavy; */
+    font-weight: bold; /* Pogrubienie tekstu */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1); /* Dodanie cienia po najechaniu myszką */
+    transition: transform 0.3s ease; /* Dodaje płynne przejście */
+
+}
+.nav-link:hover
+{
+    /* text-decoration: underline rgb(41, 107, 250) wavy; */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75); /* Dodanie cienia po najechaniu myszką */
+    transform: translateY(-3px); /* Przesunięcie w górę po najechaniu myszką */
+    transition: transform 0.3s ease; /* Dodaje płynne przejście */
+
+}
+
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(251,138,20 ,1) !important; /* Zmieniono na zielony */
+}
+
+.text-primary {
+    --bs-bg-opacity: 1;
+    color: rgba(251,138,20 ,1) !important; /* Zmieniono na zielony */
+}
+
+/* style dla dropdownu w nav */
+.dropdown-menu {
+    background-color: transparent ;
+    border: none;
+}
+
+.dropdown-menu a {
+    color: rgba(255, 255, 255) !important;
+    /* Kolor tekstu */
+}
+
+.dropdown-item {
+    border-radius: 0.5rem;
+    /* Ustawia zaokrąglenie na 0.5 rem */
+    background-color: transparent;
+    transition: background-color 0.3s;
+    /* Dodaje płynne przejście */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75); /* Dodanie cienia po najechaniu myszką */
+    transition: transform 0.3s ease; /* Dodaje płynne przejście */
+
+
+}
+
+.dropdown-item:hover {
+    /* text-decoration: underline rgb(41, 107, 250) wavy; */
+    transition: background-color 0.3s;
+    background-color: transparent;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75); /* Dodanie cienia po najechaniu myszką */
+    transform: translateY(-3px); /* Przesunięcie w górę po najechaniu myszką */
+    transition: transform 0.3s ease; /* Dodaje płynne przejście */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* chowanie  przycisku do przewijania gdy pojawia sie menu "hamburgerowe" */
+#scroll-btn {
+    display: none;
+}
+
+.navbar-collapse.show ~ .background-container #scroll-btn {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    #scroll-btn {
+        display: block;
+    }
+}
+
+
+
+
+/* Ustaiwenia stylow dla karuzeli */
+
+.testimonial-slider {
+    padding: 3em 2em;
+}
+
+.testimonial-title {
+    color: #fff;
+}
+
+.testimonial-title h2 {
+    padding-left: 0.2em;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    height: 100%;
+}
+
+
+
+
+
+/* dodanie stylu po najechaniu elementu karuzeli */
+.card-link {
+    text-decoration: none;
+    /* Usunięcie podkreślenia linku */
+    color: #000;
+    /* Domyślny kolor tekstu */
+}
+
+.card-link:hover .card-body {
+    background-color: #007bff;
+    /* Tło tekstu po najechaniu myszą */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.card-link:hover .card-body h5,
+.card-link:hover .card-body p {
+    color: #fff;
+    /* Kolor tekstu po najechaniu myszą */
+}
+
+.nav-link[aria-current="page"] {
+    color: white !important
+        /* Kolor tekstu */
+}
+
+
+/* Przycisk do przewijania strony */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a#scroll-btn {
+    position: absolute;
+    height: 5em; /* Zmniejszono wysokość */
+    width: 3.125em; /* Zmniejszono szerokość */
+    border: 0.25em solid #ffffff; /* Zmniejszono grubość obramowania */
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 6em; /* Dostosowano odstęp od dołu */
+    border-radius: 1.5em; /* Zmniejszono promień zaokrąglenia */
+}
+
+a#scroll-btn:before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0.6em; /* Zmniejszono odstęp od góry */
+    height: 0.6em; /* Zmniejszono wysokość wewnętrznego elementu */
+    width: 0.6em; /* Zmniejszono szerokość wewnętrznego elementu */
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        /* transform: translateY(2.65em);  */
+        transform: translateY(2.65em); /* Dostosowano przemieszczenie */
+        opacity: 0;
+    }
+}
+
+a#scroll-btn:after {
+    
+    position: absolute;
+    content: "SCROLL DOWN";
+    display: block;
+    width: 10em; /* Dostosowano szerokość napisu */
+    text-align: center;
+    left: -3.4375em; /* Dostosowano pozycję poziomą */
+    bottom: -3em; /* Przesunięto napis poniżej przycisku */
+    font-size: 0.8em; /* Dostosowano rozmiar czcionki */
+    color: #ffffff;
+    letter-spacing: 1.5px; /* Dostosowano odstępy między literami */
+    font-weight: 600;
+}
+
+
+
+
+
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 50%;
+        display: block;
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-inner {
+        padding: 1em;
+    }
+
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33%;
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+        flex: 0 0 25%;
+    }
+}

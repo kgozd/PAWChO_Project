@@ -1,0 +1,80 @@
+/* Styl dla zdjecia jako tło */
+.background-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Ustawia wysokość kontenera na całą wysokość ekranu */
+}
+
+/* style dla sekcji "oferujemy" */
+.checked-icon i {
+    font-size: 2em;
+    color: #1170fd;
+}
+
+.checked-text {
+    font-size: 1.5em;
+}
+
+
+
+
+/* Style do featureów */
+.col-lg-4 {
+    margin-top: 20px;
+}
+
+
+
+
+/* Wyjustuj tekst */
+.dropdown-menu .dropdown-item-text p {
+    text-align: justify;
+}
+
+
+.checkbox-container {
+    text-align: left; /* Wyrównanie tekstu do lewej */
+    margin-top: 10px; /* Dodanie odstępu na górze */
+}
+
+.checkbox-container .form-check-inline {
+    margin-right: 10px; /* Odstęp między checkboxami */
+}
+
+.modal-lg .table th,
+.modal-lg .table td {
+    white-space: nowrap;
+    max-width: none;
+}
+
+
+#kontakt .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+#kontakt .card:hover {
+    transform: scale(1.05);
+}
+
+#kontakt .card-title {
+    font-weight: bold;
+    color: #1170fd;
+}
+
+#kontakt .card-body {
+    padding: 20px;
+}
+
+
+
+#kontakt .link-light {
+    text-decoration: none;
+}
+
+#kontakt .link-light:hover {
+    text-decoration: underline;
+}
+
+
+
