@@ -1,6 +1,7 @@
 services:
   flask_app:
-    build: .
+    image: kgozdz/pawcho:main
+
     ports:
       - "5000:5000"
     volumes:
@@ -9,10 +10,16 @@ services:
 
     networks:
       - app-network
-    restart: always
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; s = socket.socket(); s.connect(('localhost', 5000))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
   nginx:
-    image: nginx:latest
+    image: nginx@sha256:9d6b58feebd2dbd3c56ab5853333d627cc6e281011cfd6050fa4bcf2072c9496
     ports:
       - "80:30160"
     volumes:
@@ -23,7 +30,8 @@ services:
       - ./app/translations:/app/translations:ro
 
     depends_on:
-      - flask_app
+      flask_app:
+        condition:  service_healthy
     networks:
       - app-network
     restart: always
