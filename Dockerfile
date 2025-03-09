@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.title="Flask Application" \
     org.opencontainers.image.authors="Krystian Góźdź" \
     org.opencontainers.image.source="https://github.com/kgozd/PAWChO_Project" 
 
-RUN apt  update  && rm -rf /var/lib/apt/lists/*
+# RUN apt  update  && rm -rf /var/lib/apt/lists/*
 
 
 COPY requirements.txt .
