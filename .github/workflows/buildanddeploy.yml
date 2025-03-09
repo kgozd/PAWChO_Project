@@ -44,16 +44,6 @@ jobs:
           type=raw,value=latest
 
 
-    - name: Cache Docker layers
-      uses:  actions/cache@v4
-      with:
-        path: /tmp/.buildx-cache
-        key: ${{ runner.os }}-buildx-${{ github.sha }}
-        restore-keys: |
-          ${{ runner.os }}-buildx-
-
-
-
 
     - name: Build and push Docker image
       id: push
@@ -67,6 +57,14 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         cache-from: type=registry,ref=kgozdz/pawcho:cache
         cache-to: type=registry,ref=kgozdz/pawcho:cache,mode=max
+
+
+    - name: Scan Docker image for vulnerabilities
+      uses: aquasecurity/trivy-action@0.28.0
+      with:
+        image-ref: kgozdz/pawcho:latest
+        severity: CRITICAL,HIGH
+        ignore-unfixed: true
 
     - name: Generate artifact attestation
       uses: actions/attest-build-provenance@v2
