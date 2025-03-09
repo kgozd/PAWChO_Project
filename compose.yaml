@@ -1,6 +1,6 @@
 services:
   flask_app:
-    image: kgozdz/pawcho:main
+    image: kgozdz/pawcho:latest
 
     ports:
       - "5000:5000"
