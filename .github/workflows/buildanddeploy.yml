@@ -11,7 +11,7 @@ jobs:
 
     permissions:
       packages: write
-      contents: read
+      contents: read  
       attestations: write
       id-token: write
 
@@ -30,6 +30,8 @@ jobs:
       uses: docker/metadata-action@v2
       with:
         images: kgozdz/pawcho
+        tags: |
+          type=raw,value=latest
 
     - name: Build and push Docker image
       id: push

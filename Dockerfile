@@ -1,21 +1,17 @@
-FROM python@sha256:d1fd807555208707ec95b284afd10048d0737e84b5f2d6fdcbed2922b9284b56 AS builder
+FROM python@sha256:f3614d98f38b0525d670f287b0474385952e28eb43016655dd003d0e28cf8652 
 
 LABEL org.opencontainers.image.title="Flask Application" \
-      org.opencontainers.image.description="Simple Flask web app" \
-      org.opencontainers.image.authors="Krystian Góźdź" \
-      org.opencontainers.image.source="https://github.com/kgozd/PAWChO_Project" 
+    org.opencontainers.image.description="Simple Flask web app" \
+    org.opencontainers.image.authors="Krystian Góźdź" \
+    org.opencontainers.image.source="https://github.com/kgozd/PAWChO_Project" 
 
-RUN apt  update  &&    rm -rf /var/lib/apt/lists/*
+RUN apt  update  && rm -rf /var/lib/apt/lists/*
 
-RUN python -m venv /opt/venv
-
-ENV PATH="/opt/venv/bin:$PATH"
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 
-ENV PATH="/opt/venv/bin:$PATH"
 
 WORKDIR /app
 
