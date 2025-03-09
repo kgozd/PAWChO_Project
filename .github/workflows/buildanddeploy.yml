@@ -42,6 +42,8 @@ jobs:
         images: kgozdz/pawcho
         tags: |
           type=raw,value=latest
+          type=sha,prefix=
+
 
 
 
@@ -60,13 +62,19 @@ jobs:
 
 
     - name: Scan Docker image for vulnerabilities
+      id: trivy
       uses: aquasecurity/trivy-action@0.28.0
       with:
         image-ref: kgozdz/pawcho:latest
         severity: CRITICAL,HIGH,MEDIUM,LOW
         ignore-unfixed: true
 
+    - name: Check for vulnerabilities
+      if: steps.trivy.outputs.vulnerabilities != '0'
+      run: exit 1
+
     - name: Generate artifact attestation
+      if: steps.trivy.outputs.vulnerabilities == '0'
       uses: actions/attest-build-provenance@v2
       with:
         subject-name: index.docker.io/kgozdz/pawcho
