@@ -63,14 +63,16 @@ jobs:
 
     - name: Scan Docker image for vulnerabilities
       id: trivy
-      uses: aquasecurity/trivy-action@0.28.0
+      uses: aquasecurity/trivy-action@master
       with:
         image-ref: kgozdz/pawcho:latest
         severity: CRITICAL,HIGH,MEDIUM,LOW
+        format: "table"
+        timeout: '10m'
         ignore-unfixed: true
 
-    - name: Check for vulnerabilities
-      run: echo "Trivy vulnerabilities ${{ steps.trivy.outputs.vulnerabilities }}"
+
+
 
     - name: Generate artifact attestation
       uses: actions/attest-build-provenance@v2
