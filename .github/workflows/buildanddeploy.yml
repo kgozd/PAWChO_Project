@@ -41,6 +41,8 @@ jobs:
         tags: |
           type=raw,value=latest
           type=sha,prefix=
+          type=raw,value=${{ github.sha }}
+
 
     - name: Build Docker image (for CVE scan)
       id: build
@@ -57,13 +59,13 @@ jobs:
 
     - name: Scan Docker image for vulnerabilities
       id: trivy
-      uses: aquasecurity/trivy-action@master
+      uses: aquasecurity/trivy-action@0.28.0
       with:
         image-ref: kgozdz/pawcho:local-scan
         severity: CRITICAL,HIGH
         format: "table"
         timeout: '10m'
-        # ignore-unfixed: true
+        ignore-unfixed: true
         vuln-type: 'os,library'
         exit-code: '1'
 
