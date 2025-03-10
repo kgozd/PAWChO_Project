@@ -49,7 +49,7 @@ jobs:
 
     - name: Build Docker image
       id: build
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v4
       with:
         context: .
         file: ./Dockerfile
@@ -59,18 +59,30 @@ jobs:
         tags: kgozdz/pawcho:latest
         cache-from: type=registry,ref=kgozdz/pawcho:cache
         cache-to: type=registry,ref=kgozdz/pawcho:cache,mode=max
+        provenance: true 
+
+    - name: Build and push Docker image for scanning
+      id: build-scan
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true 
+        tags: kgozdz/pawcho:scan-${{ github.sha }}
+        cache-from: type=registry,ref=kgozdz/pawcho:cache
+        cache-to: type=registry,ref=kgozdz/pawcho:cache,mode=max
 
     - name: Scan Docker image for vulnerabilities
       id: trivy
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: kgozdz/pawcho:latest
+        image-ref: kgozdz/pawcho:scan-${{ github.sha }}  
         severity: CRITICAL,HIGH,MEDIUM,LOW
         format: "table"
         timeout: '10m'
         ignore-unfixed: true
         vuln-type: 'os,library'
-        exit-code: '1'  
+        exit-code: '1'
 
     - name: Push Docker image
       id: push  
