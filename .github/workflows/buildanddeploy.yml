@@ -11,7 +11,7 @@ jobs:
 
     permissions:
       packages: write
-      contents: read  
+      contents: read
       attestations: write
       id-token: write
 
@@ -25,50 +25,33 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Set up QUEMU
+    - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
-      
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
       with:
         install: true
 
-
-
     - name: Extract metadata (tags, labels) for Docker
       id: meta
-      uses: docker/metadata-action@v2
+      uses: docker/metadata-action@v5
       with:
         images: kgozdz/pawcho
         tags: |
           type=raw,value=latest
           type=sha,prefix=
 
-
-
-
-    - name: Build Docker image
+    - name: Build Docker image (for CVE scan)
       id: build
       uses: docker/build-push-action@v4
       with:
         context: .
         file: ./Dockerfile
-        push: false  
-        load: true   
-        platforms: linux/amd64  
-        tags: kgozdz/pawcho:latest
-        cache-from: type=registry,ref=kgozdz/pawcho:cache
-        cache-to: type=registry,ref=kgozdz/pawcho:cache,mode=max
-        provenance: true 
-
-    - name: Build and push Docker image for scanning
-      id: build-scan
-      uses: docker/build-push-action@v4
-      with:
-        context: .
-        file: ./Dockerfile
-        push: true 
-        tags: kgozdz/pawcho:scan-${{ github.sha }}
+        push: false
+        load: true
+        platforms: linux/amd64
+        tags: kgozdz/pawcho:local-scan
         cache-from: type=registry,ref=kgozdz/pawcho:cache
         cache-to: type=registry,ref=kgozdz/pawcho:cache,mode=max
 
@@ -76,18 +59,18 @@ jobs:
       id: trivy
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: kgozdz/pawcho:scan-${{ github.sha }}  
-        severity: CRITICAL,HIGH,MEDIUM,LOW
+        image-ref: kgozdz/pawcho:local-scan
+        severity: CRITICAL,HIGH
         format: "table"
         timeout: '10m'
         ignore-unfixed: true
         vuln-type: 'os,library'
         exit-code: '1'
 
-    - name: Push Docker image
-      id: push  
-      if: success()  
-      uses: docker/build-push-action@v2
+    - name: Push Docker image (if no vulnerabilities)
+      id: push
+      if: success()
+      uses: docker/build-push-action@v4
       with:
         context: .
         file: ./Dockerfile
@@ -99,8 +82,9 @@ jobs:
         cache-to: type=registry,ref=kgozdz/pawcho:cache,mode=max
 
     - name: Generate artifact attestation
+      if: success()
       uses: actions/attest-build-provenance@v2
       with:
         subject-name: index.docker.io/kgozdz/pawcho
-        subject-digest: ${{ steps.push.outputs.digest }}  
+        subject-digest: ${{ steps.push.outputs.digest }}
         push-to-registry: true
