@@ -63,7 +63,7 @@ jobs:
         severity: CRITICAL,HIGH
         format: "table"
         timeout: '10m'
-        ignore-unfixed: true
+        # ignore-unfixed: true
         vuln-type: 'os,library'
         exit-code: '1'
 
